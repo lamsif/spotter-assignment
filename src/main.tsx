@@ -1,5 +1,23 @@
 import { createRoot } from 'react-dom/client';
-import App from './App.tsx';
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Home from './pages/home';
+import Search from './pages/search';
+import ErrorPage from './pages/error';
 import './index.css';
 
-createRoot(document.getElementById('root') as HTMLElement).render(<App />);
+// Routing setup
+const router = createBrowserRouter([
+    {
+        index: true,
+        path: '/',
+        element: <Home />,
+        errorElement: <ErrorPage />
+    },
+    {
+        path: '/search',
+        element: <Search />
+    }
+]);
+
+// Render app
+createRoot(document.getElementById('root') as HTMLElement).render(<RouterProvider router={router} />);
