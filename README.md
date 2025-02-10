@@ -6,11 +6,15 @@ Assignment project for the Front-End Developer position in Spotter
 
 [Flight app](https://flights-app-assignment.netlify.app)
 
+## Loom demo
+
+[Demo](https://www.loom.com/share/12c7c45063dd44ceaddad1dd5fbd1ff4?sid=9a798b7b-3596-4968-b24e-47a54408b16a)
+
 ## Commands
 
 ### Installation
 
-`npm intall`
+`npm install`
 
 ### Development server
 
